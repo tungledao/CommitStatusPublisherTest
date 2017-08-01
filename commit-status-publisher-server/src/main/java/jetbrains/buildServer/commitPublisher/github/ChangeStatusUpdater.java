@@ -97,6 +97,8 @@ public class ChangeStatusUpdater {
     if (url == null)
       return null;
     Repository repo = GitRepositoryParser.parseRepository(url);
+    final String tung_url = String.valueOf(url);
+    final String tung_repo = String.valueOf(repo);
     if (repo == null)
       return null;
 
