@@ -86,7 +86,7 @@ public class ChangeStatusUpdater {
         throw new IllegalArgumentException("Failed to parse authentication type:" + authenticationType);
     }
   }
-
+  
   @Nullable
   public Handler getUpdateHandler(@NotNull VcsRootInstance root, @NotNull Map<String, String> params) {
     final GitHubApi api = getGitHubApi(params);
